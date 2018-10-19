@@ -1,0 +1,8 @@
+# OSS WLAN and BT MAC setup
+service macaddrsetup /vendor/bin/macaddrsetup ${ro.wifi.addr_path}
+    class main
+    user system
+    group system bluetooth wifi
+    capabilities NET_ADMIN NET_RAW
+    oneshot
+
