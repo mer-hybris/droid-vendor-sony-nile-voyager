@@ -1,4 +1,4 @@
-%define device voyager
+%define multiple_rpms 1
 %define rpm_device voyager
 
 %define variant -vendor
